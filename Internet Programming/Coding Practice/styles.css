@@ -1,0 +1,14 @@
+h1{
+    color: navy;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+}
+th{
+    background-color: aquamarine;
+}
+td{
+    background-color: beige;
+}
