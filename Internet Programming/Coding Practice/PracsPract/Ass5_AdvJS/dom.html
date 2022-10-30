@@ -7,17 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
+    <h1 id="id01" onmouseover="over()" onmouseout="out()">Old Heading</h1>
     <form name="form1">
         <label for="name">Enter Name : </label>
         <input type="text" name="name" id="">
         <input type="button" onclick = "printvalue()" value="Submit">
     </form>
+    <img id="emo"src="/Ass5_AdvJS/1.png" alt="Emoji" onclick="sad()">
     
 </body>
 </html>
 <script type="text/javascript">
+    document.getElementById("demo").innerHTML = "Hello World!";
     function printvalue(){
         var name = document.form1.name.value;
         alert('Welcome '+ name+ "!");
+        
+    }
+    function over(){
+        const element = document.getElementById("id01");
+        element.innerHTML = "New Heading";
+    }
+    function out(){
+        const element=document.getElementById("id01");
+        element.innerHTML="Old Heading";
+    }
+    function sad(){
+        document.getElementById("emo").src ="/Ass5_AdvJS/2.png";
     }
 </script>
